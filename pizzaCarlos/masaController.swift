@@ -67,7 +67,8 @@ class masaController: UIViewController {
         let enviarTam = tam
         let vistaFinal = segue.destinationViewController as! quesoController
         vistaFinal.masa = enviarMasa
-        vistaFinal.tam = enviarMasa
+        vistaFinal.tam = enviarTam
+        
     }
     /*
     

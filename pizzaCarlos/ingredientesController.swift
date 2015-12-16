@@ -134,6 +134,7 @@ class ingredientesController: UIViewController {
         vistaConfirmar.ingredientes = enviarIngre
     }
     
+    
     /*
     @IBOutlet weak var switchPeperoni: UISwitch!
     

@@ -45,7 +45,20 @@ class elegirViewController: UIViewController {
         lblQueso.text = queso
         lblIngre.text = ingredientes
     }
-     /*
+    
+    
+    @IBAction func btnCancelar() {
+        lblTam.text = " "
+        lblMasa.text = " "
+        lblQueso.text = " "
+        lblIngre.text = " "
+        
+        
+    
+    }
+    
+    
+     /*s
     @IBOutlet weak var elegirQueso: UIButton!
    
     @IBAction func pastaGruesa() {
