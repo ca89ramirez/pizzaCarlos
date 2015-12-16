@@ -491,6 +491,9 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="masa" translatesAutoresizingMaskIntoConstraints="NO" id="zFj-mu-ggu">
+                                <rect key="frame" x="42" y="297" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -518,6 +521,9 @@
             <point key="canvasLocation" x="397" y="998"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="masa" width="600" height="337"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="m0i-FK-iwI"/>
     </inferredMetricsTieBreakers>
