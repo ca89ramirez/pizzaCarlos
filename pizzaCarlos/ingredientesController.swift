@@ -67,7 +67,7 @@ class ingredientesController: UIViewController {
         }
     }
     @IBAction func btnPavo() {
-        if switchPepe.on{
+        if switchPavo.on{
             switchPavo.setOn(false, animated: true)
             ingredientes += "Pavo"
             lblIngredientes.text = ingredientes
@@ -78,7 +78,7 @@ class ingredientesController: UIViewController {
     }
     
     @IBAction func btnAceitu() {
-        if switchPepe.on{
+        if switchAceituna.on{
             switchAceituna.setOn(false, animated: true)
             ingredientes += "Aceituna"
             lblIngredientes.text = ingredientes
@@ -89,7 +89,7 @@ class ingredientesController: UIViewController {
     }
     
     @IBAction func btnJam() {
-        if switchPepe.on{
+        if switchJamon.on{
             switchJamon.setOn(false, animated: true)
             ingredientes += "Jamon"
             lblIngredientes.text = ingredientes
@@ -101,18 +101,18 @@ class ingredientesController: UIViewController {
     
     
     @IBAction func btnPina() {
-        if switchPepe.on{
+        if switchPina.on{
             switchPina.setOn(false, animated: true)
             ingredientes += "Pina"
             lblIngredientes.text = ingredientes
             switchPina.enabled = true
         }else{
-            switchPepe.setOn(true, animated: false)
+            switchPina.setOn(true, animated: false)
         }
     }
     
     @IBAction func btnSalchi() {
-        if switchPepe.on{
+        if switchSalchicha.on{
             switchSalchicha.setOn(false, animated: true)
             ingredientes += "Salchicha"
             lblIngredientes.text = ingredientes
