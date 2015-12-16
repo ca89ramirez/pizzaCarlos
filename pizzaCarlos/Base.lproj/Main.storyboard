@@ -80,10 +80,10 @@
             </objects>
             <point key="canvasLocation" x="1143" y="978"/>
         </scene>
-        <!--Elegir View Controller-->
+        <!--Masa Controller-->
         <scene sceneID="dCD-mN-lcy">
             <objects>
-                <viewController id="NDd-IR-Xmg" customClass="elegirViewController" customModule="pizzaCarlos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="NDd-IR-Xmg" customClass="masaController" customModule="pizzaCarlos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YnW-P0-VmG"/>
                         <viewControllerLayoutGuide type="bottom" id="Hq6-nE-z0M"/>
@@ -93,69 +93,76 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tipo de masa" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifW-kC-RQg">
-                                <rect key="frame" x="104" y="175" width="105" height="21"/>
+                                <rect key="frame" x="45" y="178" width="105" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2N-YR-pp9">
-                                <rect key="frame" x="104" y="495" width="85" height="30"/>
-                                <state key="normal" title="Elegir queso">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="3Hw-Zc-CXZ" kind="show" id="PjR-tr-yoK"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Elección de masa" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1P-cf-5Hh">
-                                <rect key="frame" x="104" y="428" width="136" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71M-xl-ecq">
-                                <rect key="frame" x="104" y="230" width="50" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dv3-cL-EAQ">
+                                <rect key="frame" x="58" y="235" width="50" height="30"/>
                                 <state key="normal" title="Gruesa">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="pastaGruesa" destination="NDd-IR-Xmg" eventType="touchUpInside" id="ugH-0N-VEd"/>
+                                    <action selector="botonGruesa" destination="NDd-IR-Xmg" eventType="touchUpInside" id="EOG-M5-2vg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIZ-aN-7I6">
-                                <rect key="frame" x="104" y="359" width="57" height="30"/>
-                                <state key="normal" title="Delgada">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="pastaDelgada" destination="NDd-IR-Xmg" eventType="touchUpInside" id="t67-uP-rdI"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MR1-Mj-z03">
-                                <rect key="frame" x="101" y="290" width="62" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Omx-Oh-FdH">
+                                <rect key="frame" x="58" y="285" width="62" height="30"/>
                                 <state key="normal" title="Crujiente">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="pastacruji" destination="NDd-IR-Xmg" eventType="touchUpInside" id="QPo-MF-fbS"/>
+                                    <action selector="botonCrujiente" destination="NDd-IR-Xmg" eventType="touchUpInside" id="dGR-n2-H6U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPP-Ku-PBM">
+                                <rect key="frame" x="55" y="333" width="57" height="30"/>
+                                <state key="normal" title="Delgada">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="botonDelgada" destination="NDd-IR-Xmg" eventType="touchUpInside" id="fVt-x6-AHt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tamaño" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rqo-pa-r0e">
+                                <rect key="frame" x="40" y="94" width="61" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Elección de masa" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19e-Tu-9Fn">
+                                <rect key="frame" x="45" y="410" width="136" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4n7-P9-tAd">
+                                <rect key="frame" x="69" y="466" width="88" height="30"/>
+                                <state key="normal" title="Elegir Queso">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3Hw-Zc-CXZ" kind="show" id="vbq-Hh-4hl"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="elegirQueso" destination="Q2N-YR-pp9" id="zCA-1i-FdA"/>
-                        <outlet property="labelMasa" destination="s1P-cf-5Hh" id="WcH-ru-IQG"/>
+                        <outlet property="SeleccionMasa" destination="19e-Tu-9Fn" id="R0e-Xc-DQA"/>
+                        <outlet property="botonElegirQueso" destination="4n7-P9-tAd" id="Qza-uz-7Ma"/>
+                        <outlet property="lblTamano" destination="Rqo-pa-r0e" id="JDO-ao-7W3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IgR-lO-ye5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1885" y="998"/>
         </scene>
-        <!--Elegir View Controller-->
+        <!--Queso Controller-->
         <scene sceneID="MBp-rE-bsV">
             <objects>
-                <viewController id="3Hw-Zc-CXZ" customClass="elegirViewController" customModule="pizzaCarlos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3Hw-Zc-CXZ" customClass="quesoController" customModule="pizzaCarlos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3h0-bC-39o"/>
                         <viewControllerLayoutGuide type="bottom" id="hmd-mJ-uVI"/>
@@ -170,73 +177,87 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFZ-ru-kTc">
-                                <rect key="frame" x="34" y="474" width="122" height="30"/>
-                                <state key="normal" title="Elige ingredientes">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Qj-xE-Ey9">
+                                <rect key="frame" x="47" y="193" width="68" height="30"/>
+                                <state key="normal" title="Mozarrela">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="u2x-DG-vGk" kind="show" id="TMy-0S-lHP"/>
+                                    <action selector="botonMoza:" destination="3Hw-Zc-CXZ" eventType="touchUpInside" id="WDM-p7-Y1E"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Z7-4x-PiB">
-                                <rect key="frame" x="50" y="199" width="70" height="30"/>
-                                <state key="normal" title="Mozzarela">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="quesoMozz" destination="3Hw-Zc-CXZ" eventType="touchUpInside" id="fOI-rl-psB"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dV1-DB-Mlc">
-                                <rect key="frame" x="50" y="254" width="78" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xj0-0j-Kco">
+                                <rect key="frame" x="29" y="243" width="78" height="30"/>
                                 <state key="normal" title="Parmesano">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="quesoParme" destination="3Hw-Zc-CXZ" eventType="touchUpInside" id="0M6-Kn-hGO"/>
+                                    <action selector="botonParma" destination="3Hw-Zc-CXZ" eventType="touchUpInside" id="EoP-Bb-aqu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMa-e0-WZw">
-                                <rect key="frame" x="50" y="365" width="69" height="30"/>
-                                <state key="normal" title="Sin queso">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="quesoSin" destination="3Hw-Zc-CXZ" eventType="touchUpInside" id="J4G-wT-sUL"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Elección de queso" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1z-6w-bLy">
-                                <rect key="frame" x="50" y="424" width="142" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5AP-HN-nji">
-                                <rect key="frame" x="50" y="304" width="60" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2CN-rM-TCd">
+                                <rect key="frame" x="47" y="298" width="60" height="30"/>
                                 <state key="normal" title="Cheddar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="quesoChe" destination="3Hw-Zc-CXZ" eventType="touchUpInside" id="Uaw-bJ-DXy"/>
+                                    <action selector="botonCheda" destination="3Hw-Zc-CXZ" eventType="touchUpInside" id="KM0-Vt-EVa"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Elección de queso" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JF-Td-4O4">
+                                <rect key="frame" x="88" y="418" width="142" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fep-Lk-11f">
+                                <rect key="frame" x="88" y="468" width="127" height="30"/>
+                                <state key="normal" title="Elegir ingredientes">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="u2x-DG-vGk" kind="show" id="th2-RZ-Jom"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADe-Xz-Ht6">
+                                <rect key="frame" x="39" y="350" width="68" height="30"/>
+                                <state key="normal" title="Sin quesa">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="botonSinQueso" destination="3Hw-Zc-CXZ" eventType="touchUpInside" id="u3V-U0-7NF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Masa" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Mb-lM-3G5">
+                                <rect key="frame" x="39" y="108" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tamaño" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4eD-Pq-mn3">
+                                <rect key="frame" x="39" y="79" width="61" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="eligeIngredientes" destination="WFZ-ru-kTc" id="xOz-us-Jkg"/>
-                        <outlet property="labelQueso" destination="q1z-6w-bLy" id="5yO-2t-0mt"/>
+                        <outlet property="botonIngredientes" destination="fep-Lk-11f" id="MOJ-lc-Qqn"/>
+                        <outlet property="labelElecionQueso" destination="8JF-Td-4O4" id="iPi-GC-GRb"/>
+                        <outlet property="lblMasa" destination="9Mb-lM-3G5" id="jVy-at-YdK"/>
+                        <outlet property="lblTamano" destination="4eD-Pq-mn3" id="ODz-2N-UWT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sC1-Dv-GAI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2610" y="998"/>
         </scene>
-        <!--Elegir View Controller-->
+        <!--Ingredientes Controller-->
         <scene sceneID="wwS-Jl-Ssk">
             <objects>
-                <viewController id="u2x-DG-vGk" customClass="elegirViewController" customModule="pizzaCarlos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="u2x-DG-vGk" customClass="ingredientesController" customModule="pizzaCarlos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y88-rQ-Fbe"/>
                         <viewControllerLayoutGuide type="bottom" id="wvD-1e-uKt"/>
@@ -245,117 +266,137 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Elige ingredientes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Gu-ED-nz0">
-                                <rect key="frame" x="38" y="125" width="136" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Masa" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIP-qZ-pSv">
+                                <rect key="frame" x="16" y="115" width="123" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUY-W3-jgL">
-                                <rect key="frame" x="57" y="258" width="35" height="30"/>
-                                <state key="normal" title="Pavo">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="botonPavo:" destination="u2x-DG-vGk" eventType="touchUpInside" id="XDw-ql-sId"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yxv-Dx-QoC">
-                                <rect key="frame" x="57" y="314" width="67" height="30"/>
-                                <state key="normal" title="Salchicha">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="botonSalchi" destination="u2x-DG-vGk" eventType="touchUpInside" id="Wt8-fa-O4P"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNQ-53-mjJ">
-                                <rect key="frame" x="57" y="422" width="31" height="30"/>
-                                <state key="normal" title="Piña">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="botonPina" destination="u2x-DG-vGk" eventType="touchUpInside" id="irJ-5N-Jir"/>
-                                </connections>
-                            </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oJF-aC-SZp">
-                                <rect key="frame" x="176" y="257" width="51" height="31"/>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qQ6-dy-0qE">
-                                <rect key="frame" x="176" y="313" width="51" height="31"/>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bY5-ai-uab">
-                                <rect key="frame" x="176" y="366" width="51" height="31"/>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mJg-0D-zfC">
-                                <rect key="frame" x="176" y="421" width="51" height="31"/>
-                            </switch>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUa-13-xYt">
-                                <rect key="frame" x="57" y="367" width="60" height="30"/>
-                                <state key="normal" title="Aceituna">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="botonAceitu" destination="u2x-DG-vGk" eventType="touchUpInside" id="g2Y-QN-ver"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6P-Fv-M65">
-                                <rect key="frame" x="57" y="162" width="47" height="30"/>
-                                <state key="normal" title="Jamon">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="botonJamon" destination="u2x-DG-vGk" eventType="touchUpInside" id="63c-tt-3h0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czn-Xu-8Al">
-                                <rect key="frame" x="57" y="200" width="61" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Queso" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMS-na-Ii1">
+                                <rect key="frame" x="16" y="144" width="123" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rv3-U8-xBg">
+                                <rect key="frame" x="30" y="219" width="61" height="30"/>
                                 <state key="normal" title="Peperoni">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="botonPepero" destination="u2x-DG-vGk" eventType="touchUpInside" id="Yza-qX-JSP"/>
+                                    <action selector="btnPepe" destination="u2x-DG-vGk" eventType="touchUpInside" id="VGo-vY-k4Y"/>
                                 </connections>
                             </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eek-cd-3PP">
-                                <rect key="frame" x="176" y="200" width="51" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjt-rQ-Aid">
+                                <rect key="frame" x="30" y="262" width="35" height="30"/>
+                                <state key="normal" title="Pavo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPavo" destination="u2x-DG-vGk" eventType="touchUpInside" id="VNQ-ut-qi9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofq-wC-oX0">
+                                <rect key="frame" x="25" y="308" width="68" height="30"/>
+                                <state key="normal" title="Aceitunas">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAceitu" destination="u2x-DG-vGk" eventType="touchUpInside" id="RHk-Ie-Yyd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPK-ET-vQO">
+                                <rect key="frame" x="30" y="370" width="47" height="30"/>
+                                <state key="normal" title="Jamon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnJam" destination="u2x-DG-vGk" eventType="touchUpInside" id="NPT-g4-08v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TaU-z5-nLe">
+                                <rect key="frame" x="30" y="416" width="31" height="30"/>
+                                <state key="normal" title="Piña">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPina" destination="u2x-DG-vGk" eventType="touchUpInside" id="oFL-EY-sDq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tze-qu-pRB">
+                                <rect key="frame" x="25" y="471" width="67" height="30"/>
+                                <state key="normal" title="Salchicha">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSalchi" destination="u2x-DG-vGk" eventType="touchUpInside" id="HRl-0F-JWa"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ydE-Rs-kbZ">
+                                <rect key="frame" x="95" y="218" width="51" height="31"/>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7vL-22-5VP">
-                                <rect key="frame" x="176" y="161" width="51" height="31"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g4f-Jz-Uj7">
+                                <rect key="frame" x="95" y="268" width="51" height="31"/>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwC-cG-PZW">
-                                <rect key="frame" x="47" y="492" width="379" height="21"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UdV-mR-IXT">
+                                <rect key="frame" x="95" y="315" width="51" height="31"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gxn-DH-BB9">
+                                <rect key="frame" x="95" y="378" width="51" height="31"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UrQ-ze-WfF">
+                                <rect key="frame" x="95" y="415" width="51" height="31"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U7H-dL-mXU">
+                                <rect key="frame" x="95" y="470" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingredientes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDz-HQ-LS9">
+                                <rect key="frame" x="25" y="523" width="163" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYT-8l-6yz">
-                                <rect key="frame" x="46" y="539" width="68" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRB-Rw-1gz">
+                                <rect key="frame" x="25" y="562" width="68" height="30"/>
                                 <state key="normal" title="Confirmar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="confirmarPizza:" destination="u2x-DG-vGk" eventType="touchUpInside" id="U0j-fd-c7c"/>
-                                    <segue destination="CNf-S7-AAJ" kind="show" id="cqX-90-IiL"/>
+                                    <segue destination="CNf-S7-AAJ" kind="show" id="S2c-9H-kbl"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Elige ingredientes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Gu-ED-nz0">
+                                <rect key="frame" x="16" y="182" width="136" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tamaño" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ydj-JM-l1K">
+                                <rect key="frame" x="15" y="86" width="108" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="buttonConfirm" destination="OYT-8l-6yz" id="aKZ-t9-K73"/>
-                        <outlet property="labelIngredientes" destination="hwC-cG-PZW" id="jwv-6z-ttZ"/>
-                        <outlet property="switchAceituna" destination="bY5-ai-uab" id="Fwy-GF-Gfc"/>
-                        <outlet property="switchJamon" destination="7vL-22-5VP" id="8Cf-jS-NZ9"/>
-                        <outlet property="switchPavo" destination="oJF-aC-SZp" id="vN5-tv-OVu"/>
-                        <outlet property="switchPeperoni" destination="eek-cd-3PP" id="Gvc-oW-0f4"/>
-                        <outlet property="switchPina" destination="mJg-0D-zfC" id="fRo-Et-Ze3"/>
-                        <outlet property="switchSalchicha" destination="qQ6-dy-0qE" id="PXz-g5-BOh"/>
+                        <outlet property="btnConfirm" destination="fRB-Rw-1gz" id="1zF-1Y-PIq"/>
+                        <outlet property="lblIngredientes" destination="LDz-HQ-LS9" id="8p2-fh-1EG"/>
+                        <outlet property="lblMasa" destination="cIP-qZ-pSv" id="RzX-03-Dn6"/>
+                        <outlet property="lblQueso" destination="gMS-na-Ii1" id="0Le-Cg-1QT"/>
+                        <outlet property="lblTamano" destination="Ydj-JM-l1K" id="fyR-dD-Usb"/>
+                        <outlet property="switchAceituna" destination="UdV-mR-IXT" id="JoP-cG-5Wy"/>
+                        <outlet property="switchJamon" destination="Gxn-DH-BB9" id="bF6-aJ-wk3"/>
+                        <outlet property="switchPavo" destination="g4f-Jz-Uj7" id="EDO-o0-vsr"/>
+                        <outlet property="switchPepe" destination="ydE-Rs-kbZ" id="lS3-ia-RTV"/>
+                        <outlet property="switchPina" destination="UrQ-ze-WfF" id="Enl-5i-EeV"/>
+                        <outlet property="switchSalchicha" destination="U7H-dL-mXU" id="5Or-yU-DaZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="faN-6p-Sj4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3342" y="1015"/>
+            <point key="canvasLocation" x="3297" y="1003"/>
         </scene>
         <!--Elegir View Controller-->
         <scene sceneID="HIX-RY-Flu">
@@ -387,20 +428,26 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Queso" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXV-zb-CHM">
-                                <rect key="frame" x="97" y="204" width="51" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tamaño" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OoT-UB-YCw">
+                                <rect key="frame" x="37" y="192" width="143" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Masa" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTJ-0L-4e2">
-                                <rect key="frame" x="97" y="249" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Masa" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mf-Zb-wnA">
+                                <rect key="frame" x="37" y="234" width="136" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cheese" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIb-RY-pF1">
-                                <rect key="frame" x="97" y="283" width="59" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Queso" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vpt-qB-V5d">
+                                <rect key="frame" x="37" y="273" width="126" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingredientes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waw-PP-Qqv">
+                                <rect key="frame" x="37" y="315" width="171" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -409,9 +456,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="cheeseLabel" destination="cIb-RY-pF1" id="CPg-7n-7Wa"/>
-                        <outlet property="labelConfMasa" destination="BTJ-0L-4e2" id="yVS-kU-Ad4"/>
-                        <outlet property="labelConfirmarQueso" destination="NXV-zb-CHM" id="jYg-K7-p4Z"/>
+                        <outlet property="lblIngre" destination="waw-PP-Qqv" id="9de-Ev-PQF"/>
+                        <outlet property="lblMasa" destination="6mf-Zb-wnA" id="fg9-Wj-9ZS"/>
+                        <outlet property="lblQueso" destination="Vpt-qB-V5d" id="oqC-SH-sFE"/>
+                        <outlet property="lblTam" destination="OoT-UB-YCw" id="pR1-tB-wmw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C6Y-7G-ZMK" userLabel="First Responder" sceneMemberID="firstResponder"/>

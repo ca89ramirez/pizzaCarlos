@@ -14,6 +14,9 @@
 		F138E4851C1E8A3900112403 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F138E4831C1E8A3900112403 /* LaunchScreen.xib */; };
 		F138E4911C1E8A3A00112403 /* pizzaCarlosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F138E4901C1E8A3A00112403 /* pizzaCarlosTests.swift */; };
 		F138E49D1C1E933D00112403 /* elegirViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F138E49C1C1E933D00112403 /* elegirViewController.swift */; };
+		F138E49F1C2135F500112403 /* masaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F138E49E1C2135F500112403 /* masaController.swift */; };
+		F138E4A11C21361300112403 /* quesoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F138E4A01C21361300112403 /* quesoController.swift */; };
+		F138E4A31C21362300112403 /* ingredientesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F138E4A21C21362300112403 /* ingredientesController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		F138E48F1C1E8A3A00112403 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F138E4901C1E8A3A00112403 /* pizzaCarlosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pizzaCarlosTests.swift; sourceTree = "<group>"; };
 		F138E49C1C1E933D00112403 /* elegirViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = elegirViewController.swift; sourceTree = "<group>"; };
+		F138E49E1C2135F500112403 /* masaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = masaController.swift; sourceTree = "<group>"; };
+		F138E4A01C21361300112403 /* quesoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = quesoController.swift; sourceTree = "<group>"; };
+		F138E4A21C21362300112403 /* ingredientesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ingredientesController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,9 @@
 				F138E4831C1E8A3900112403 /* LaunchScreen.xib */,
 				F138E4781C1E8A3900112403 /* Supporting Files */,
 				F138E49C1C1E933D00112403 /* elegirViewController.swift */,
+				F138E49E1C2135F500112403 /* masaController.swift */,
+				F138E4A01C21361300112403 /* quesoController.swift */,
+				F138E4A21C21362300112403 /* ingredientesController.swift */,
 			);
 			path = pizzaCarlos;
 			sourceTree = "<group>";
@@ -215,7 +224,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F138E4A11C21361300112403 /* quesoController.swift in Sources */,
 				F138E47D1C1E8A3900112403 /* ViewController.swift in Sources */,
+				F138E4A31C21362300112403 /* ingredientesController.swift in Sources */,
+				F138E49F1C2135F500112403 /* masaController.swift in Sources */,
 				F138E49D1C1E933D00112403 /* elegirViewController.swift in Sources */,
 				F138E47B1C1E8A3900112403 /* AppDelegate.swift in Sources */,
 			);
@@ -415,6 +427,7 @@
 				F138E4961C1E8A3A00112403 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F138E4971C1E8A3A00112403 /* Build configuration list for PBXNativeTarget "pizzaCarlosTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +436,7 @@
 				F138E4991C1E8A3A00112403 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

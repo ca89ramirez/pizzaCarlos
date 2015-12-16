@@ -52,10 +52,10 @@ class ViewController: UIViewController {
     
         override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let tama = tamano
-        let siguienteVista = segue.destinationViewController as! elegirViewController
-        siguienteVista.tam = tamano
+        let siguienteVista = segue.destinationViewController as! masaController
+        siguienteVista.tam = tama
     }
-    
+
     
 }
 
