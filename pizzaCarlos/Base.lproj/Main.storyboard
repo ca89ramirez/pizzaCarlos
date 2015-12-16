@@ -423,6 +423,7 @@
                                 </state>
                                 <connections>
                                     <action selector="btnCancelar" destination="CNf-S7-AAJ" eventType="touchUpInside" id="pcY-tf-OkZ"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="m0i-FK-iwI"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tamaño" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OoT-UB-YCw">
@@ -470,7 +471,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C6Y-7G-ZMK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4010" y="1015"/>
+            <point key="canvasLocation" x="1536" y="1612"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hXv-gj-9wc">
@@ -496,7 +497,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JsT-My-KD4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4693" y="1022"/>
+            <point key="canvasLocation" x="4130" y="1003"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hrG-3A-O94">
@@ -517,4 +518,7 @@
             <point key="canvasLocation" x="397" y="998"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="m0i-FK-iwI"/>
+    </inferredMetricsTieBreakers>
 </document>
